@@ -1,5 +1,14 @@
+/*
+
+AdventOfCode - day 1
+
+Combining the first and last number (digit or spelled) from each line
+Summing up all two digit numbers
+
+*/
+const regex = new RegExp('[0-9]')
+
 const first = (input: string) => {
-  const regex = new RegExp('[0-9]')
   let total : number = 0
 
   for (let line of input.split('\n')) {
@@ -27,7 +36,6 @@ const first = (input: string) => {
 const expectedFirstSolution = 'solution 1';
 
 const second = (input: string) => {
-  const regex = new RegExp('[0-9]')
   let total : number = 0
 
   for (let line of input.split('\n')) {
